@@ -38,11 +38,11 @@ h1 {
 }
 
 .card {
-  border: 0px;
+  border: 0;
   position: relative;
-  padding: 50px 50px 0px 50px;
+  padding: 50px 50px 0 50px;
   margin-top: -25px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .card img {
@@ -79,11 +79,18 @@ h1 {
   right: 150px;
 }
 
-.winnings input {
-    height: inherit;
-    width: inherit;
-    background-color: inherit;
-    border-radius: inherit;
-    text-align: inherit;
+.edit_winnings {
+    opacity: 0.1;
+}
 
+.edit_winnings:hover {
+    opacity: 1;
+}
+
+.edit_winnings input {
+  position: absolute;
+  top: 500px;
+  right: 150px;
+  width: 80px;
+  text-align: center;
 }

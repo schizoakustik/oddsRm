@@ -29,10 +29,11 @@ angular.module('myApp.view1', ['ngRoute'])
             winnings: -187
           }
         ];
+        $scope.editWinnings = function(index, win){
 
-        $scope.editWinnings = function(index, value) {
-            $scope.players[index].winnings = value;
+            $scope.players[index].winnings += parseInt(win, 10);
+         //   console.log($scope.players[index].winnings + parseInt(win, 10));
+
         };
-
     }
 ]);

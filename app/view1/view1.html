@@ -2,4 +2,5 @@
     <img ng-src="{{player.image}}">
     <p class="name">{{player.name}}</p>
     <p class="winnings">{{player.winnings}}:-</p>
+    <p class="edit_winnings"><input type="text" placeholder="Fyll i vinst" ng-model="oddsrm.win" ng-change="editWinnings($index, oddsrm.win)"></p>
 </div>
