@@ -1,0 +1,5 @@
+<div ng-repeat="player in players" class="card col-md-4">
+  <img ng-src="{{player.image}}">
+  <p class="name">{{player.name}}</p>
+  <p class="winnings"><input type="text" value="{{player.winnings}}" ng-model="player.winnings" ng-change="editWinnings($index, value)"></p>
+</div>
